@@ -1,24 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactPlayer from 'react-player'
+import ReactAudioPlayer from 'react-audio-player'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactPlayer url ="https://www.youtube.com/watch?v=_iRDopeeFec" />
+      <ReactAudioPlayer src = "https://www.computerhope.com/jargon/m/example.mp3" autoPlay controls />
     </div>
   );
 }
